@@ -121,7 +121,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 50px;
-    /* Adjust circle size */
     height: 50px;
     background: transparent;
     border: 2px solid #704a4c;
@@ -226,27 +225,6 @@ body {
     line-height: 1.4;
     margin-bottom: 4rem;
 }
-/* .photo{
-    flex-shrink: 0; 
-    width: 250px;
-    height: 250px;
-    margin-top:40%;
-    margin-left: 100%;
-    display: inline-block;
-    align-items: right;
-} */
-/* .photo img{
-    width: 200px;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-} */
-/* .intro{
-    display: inline-block;
-    margin-top: 0;
-    padding-top:0;
-    padding-left: 120px;
-} */
 h1,h2,h3{
     margin-top:5px;
     margin-bottom: 5px;
@@ -256,26 +234,23 @@ h1,h2,h3{
 }
 .home-content {
     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Ensures space between text and photo */
-    gap: 50px; /* Space between text and image */
-    max-width: 1100px; /* Controls width */
-    margin: auto; /* Centers the content */
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 50px; 
+    max-width: 1100px; 
+    margin: auto; 
     padding: 50px 10%;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap;
 }
-
 .intro {
-    flex: 1; /* Text takes remaining space */
-    min-width: 400px; /* Prevents it from getting too small */
+    flex: 1; 
+    min-width: 400px; 
 }
-
 .photo {
-    flex-shrink: 0; /* Prevents shrinking */
-    width: 330px; /* Set fixed size */
-    height: 330px; /* Set fixed size */
+    flex-shrink: 0; 
+    width: 330px; 
+    height: 330px; 
 }
-
 .photo img {
     width: 100%;
     height: 100%;
