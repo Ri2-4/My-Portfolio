@@ -16,7 +16,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #3C0316;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,12 +64,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-/* .home-content {
-    max-width: 600px;
-    flex:1;
-} */
-
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
