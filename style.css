@@ -7,7 +7,7 @@
 }
 
 body {
-    color: #ededed;
+    color: #ededed;;
 }
 
 .header {
@@ -52,24 +52,23 @@ body {
 }
 
 .home {
-    position: relative;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
     width: 100%;
-    justify-content: space-between;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 70px 10% 0;
-    background-image: url('bg.png');
+    padding-top:30px;
+    background-image: url('Burgundy\ Kona\ Cotton\ Calico\ Fabric.jpg');
     background-size: cover;
-    background-position: center;  
-    background-repeat: no-repeat;  
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.home-content {
+/* .home-content {
     max-width: 600px;
-
-}
+    flex:1;
+} */
 
 .home-content h3 {
     font-size: 32px;
@@ -77,16 +76,20 @@ body {
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
+    display: inline-block;
+   
 }
 
 .home-content h2 {
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
+    display: inline-block;
 }
 
 .home-content h3 span {
-    color: #f4b3b3
+    color: #f4b3b3;
+    display: inline-block;
 }
 
 .home-content h3:nth-of-type(2) {
@@ -102,6 +105,7 @@ body {
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
+    display: inline-block;
 }
 
 .home-sci {
@@ -109,9 +113,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    /* Adds spacing between icons */
-    margin-top: 20px;
-    /* Adds space between text and icons */
+    margin-top: 0px;
 }
 
 .home-sci a {
@@ -198,14 +200,86 @@ body {
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 1.5rem;
+    background-image: url('Burgundy\ Kona\ Cotton\ Calico\ Fabric.jpg');
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
 }
 .about-img img{
-    padding-bottom: 20%;
+    padding-bottom: 17%;
     max-width: 630px;
     height: auto;
     width: 100%;
-    /* height: 40px;
-    width: 40px; */
+    clip-path: inset(26.2% 20% 38.3% 20%);
     border-radius: 50%;
 }
-    
+.about-text h2{
+    font-size: 60px;
+}
+.about-text h2 span{
+    color:#cb4c46
+}
+.about-text p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+/* .photo{
+    flex-shrink: 0; 
+    width: 250px;
+    height: 250px;
+    margin-top:40%;
+    margin-left: 100%;
+    display: inline-block;
+    align-items: right;
+} */
+/* .photo img{
+    width: 200px;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+} */
+/* .intro{
+    display: inline-block;
+    margin-top: 0;
+    padding-top:0;
+    padding-left: 120px;
+} */
+h1,h2,h3{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.container{
+    display: inline-block;
+}
+.home-content {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Ensures space between text and photo */
+    gap: 50px; /* Space between text and image */
+    max-width: 1100px; /* Controls width */
+    margin: auto; /* Centers the content */
+    padding: 50px 10%;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.intro {
+    flex: 1; /* Text takes remaining space */
+    min-width: 400px; /* Prevents it from getting too small */
+}
+
+.photo {
+    flex-shrink: 0; /* Prevents shrinking */
+    width: 330px; /* Set fixed size */
+    height: 330px; /* Set fixed size */
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
