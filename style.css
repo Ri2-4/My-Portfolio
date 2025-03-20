@@ -59,6 +59,11 @@ body {
     display: flex;
     align-items: center;
     padding: 70px 10% 0;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
 }
 
 .home-content {
@@ -188,4 +193,19 @@ body {
         opacity: 1;
     }
 }
-
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img{
+    padding-bottom: 20%;
+    max-width: 630px;
+    height: auto;
+    width: 100%;
+    /* height: 40px;
+    width: 40px; */
+    border-radius: 50%;
+}
+    
